@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este projeto automatiza os testes do fluxo de cadastro de usuários no site [Serverest](https://front.serverest.dev/cadastrarusuarios) utilizando Cypress.
+Este projeto automatiza os testes do fluxo de usuários no site [Serverest](https://front.serverest.dev/cadastrarusuarios) utilizando Cypress.
 
 O objetivo é validar os principais casos, incluindo sucesso, erros de validação e cenários negativos para garantir a qualidade da aplicação.
 
@@ -34,27 +34,20 @@ O objetivo é validar os principais casos, incluindo sucesso, erros de validaç�
 
 ## Como Rodar os Testes
 
-1. Clone este repositório: 
+1. Clone este repositório: [clone](https://github.com/leticiamenezesb/serverest-user.git)
 
-
-2. Instale as dependências:
-´´´bash
-npm install 
+2. Instale as dependências no gitbash: npm install 
    
-3. Execute o Cypress: 
-´´´bash
-npx cypress open
+3. Execute o Cypress no gitbash: npx cypress open 
 
 4. Na interface do Cypress, selecione o arquivo cadastro.cy.js para rodar os testes.
 
 
 ## Bug Report
-Durante os testes, foi identificado um bug no sistema:
+Durante os testes, foi identificado bug no sistema.
 
-O sistema aceita senhas com apenas 1 caractere, o que não atende à política mínima de segurança.
-
-Você pode conferir o relatório detalhado no arquivo docs/bug-reports/cadastro-senha-curta.md.
+Você pode conferir o relatório detalhado no arquivo *docs/bug-reports/* e visualizar os bugs existentes.
 
 ## Contato
-Este projeto foi desenvolvido por Letícia — QA Engineer.
+Este projeto foi desenvolvido por Leticia Menezes — QA Engineer.
 Para dúvidas ou sugestões, entre em contato!
