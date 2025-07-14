@@ -1,6 +1,6 @@
 # Projeto de Automação de Testes - Cadastro de Usuário no Serverest
 
-## 🚀 Descrição
+## Descrição
 
 Este projeto automatiza os testes do fluxo de cadastro de usuários no site [Serverest](https://front.serverest.dev/cadastrarusuarios) utilizando Cypress.
 
@@ -8,7 +8,7 @@ O objetivo é validar os principais casos de cadastro, incluindo sucesso, erros 
 
 ---
 
-## 🧪 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - [Cypress](https://www.cypress.io/) para automação dos testes end-to-end
 - JavaScript como linguagem base para os testes
@@ -16,7 +16,7 @@ O objetivo é validar os principais casos de cadastro, incluindo sucesso, erros 
 
 ---
 
-## ✅ Casos de Teste Automatizados
+## Casos de Teste Automatizados
 
 | Caso de Teste                                         | Resultado Esperado                                  |
 |-------------------------------------------------------|-----------------------------------------------------|
@@ -32,7 +32,7 @@ O objetivo é validar os principais casos de cadastro, incluindo sucesso, erros 
 
 ---
 
-## 🛠️ Como Rodar os Testes
+## Como Rodar os Testes
 
 1. Clone este repositório: 
 
@@ -48,13 +48,13 @@ npx cypress open
 4. Na interface do Cypress, selecione o arquivo cadastro.cy.js para rodar os testes.
 
 
-🐞 Bug Report
+## Bug Report
 Durante os testes, foi identificado um bug no sistema:
 
 O sistema aceita senhas com apenas 1 caractere, o que não atende à política mínima de segurança.
 
 Você pode conferir o relatório detalhado no arquivo docs/bug-reports/cadastro-senha-curta.md.
 
-🤝 Contato
+## Contato
 Este projeto foi desenvolvido por Letícia — QA Engineer.
 Para dúvidas ou sugestões, entre em contato!
