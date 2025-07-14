@@ -1,10 +1,10 @@
-# Projeto de Automação de Testes - Cadastro de Usuário no Serverest
+# Projeto de Automação de Testes - Serverest
 
 ## Descrição
 
 Este projeto automatiza os testes do fluxo de cadastro de usuários no site [Serverest](https://front.serverest.dev/cadastrarusuarios) utilizando Cypress.
 
-O objetivo é validar os principais casos de cadastro, incluindo sucesso, erros de validação e cenários negativos para garantir a qualidade da aplicação.
+O objetivo é validar os principais casos, incluindo sucesso, erros de validação e cenários negativos para garantir a qualidade da aplicação.
 
 ---
 
