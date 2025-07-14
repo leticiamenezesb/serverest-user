@@ -4,7 +4,7 @@ describe('Login no Serverest', () => {
 
   const preencherLogin = ({ email = '', senha = '' }) => {
     if (email) cy.get('input[data-testid="email"]').type(email);
-    if (senha) cy.get('input[data-testid="password"]').type(senha);
+    if (senha) cy.get('[data-testid="senha"]').type(senha);
     cy.get('button[data-testid="entrar"]').click();
   };
 
