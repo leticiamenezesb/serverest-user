@@ -18,17 +18,24 @@ O objetivo é validar os principais casos, incluindo sucesso, erros de validaç�
 
 ## Casos de Teste Automatizados
 
-| Caso de Teste                                         | Resultado Esperado                                  |
-|-------------------------------------------------------|-----------------------------------------------------|
-| Cadastro de usuário administrador com sucesso         | Usuário cadastrado com mensagem de sucesso          |
-| Cadastro de usuário comum (sem marcar administrador)  | Usuário cadastrado com mensagem de sucesso          |
-| Tentativa de cadastro com e-mail já existente         | Exibir mensagem de erro de e-mail duplicado         |
-| Cadastro sem preencher nome                           | Exibir mensagem "Nome é obrigatório"                |
-| Cadastro sem preencher e-mail                         | Exibir mensagem "Email é obrigatório"               |
-| Cadastro sem preencher senha                          | Exibir mensagem "Password é obrigatório"            |
-| Cadastro com todos os campos em branco                | Exibir mensagem "Nome é obrigatório"                |
-| Cadastro com e-mail inválido                          | Cadastro não deve avançar, mantém usuário na página |
-| Cadastro com senha muito curta                        | Exibir mensagem de senha mínima                     |
+| Caso de Teste                                         | Resultado Esperado                                              |
+|-------------------------------------------------------|-----------------------------------------------------------------|
+| Cadastro de usuário administrador com sucesso         | Usuário cadastrado com mensagem de sucesso                      |
+| Cadastro de usuário comum (sem marcar administrador)  | Usuário cadastrado com mensagem de sucesso                      |
+| Tentativa de cadastro com e-mail já existente         | Exibir mensagem de erro de e-mail duplicado                     |
+| Cadastro sem preencher nome                           | Exibir mensagem "Nome é obrigatório"                            |
+| Cadastro sem preencher e-mail                         | Exibir mensagem "Email é obrigatório"                           |
+| Cadastro sem preencher senha                          | Exibir mensagem "Password é obrigatório"                        |
+| Cadastro com todos os campos em branco                | Exibir mensagem "Nome é obrigatório"                            |
+| Cadastro com e-mail inválido                          | Cadastro não deve avançar, mantém usuário na página             |
+| Cadastro com senha muito curta                        | Exibir mensagem de senha mínima                                 |
+| Login com sucesso                                     | Login realizado com sucesso e redirecionamento (ou token salvo) |
+| Login com senha incorreta                             | Exibir mensagem de erro                                         |
+| Login com e-mail incorreto                            | Exibir mensagem de erro                                         |
+| Login com e-mail no formato inválido                  | Exibir erro de validação (ex: e-mail sem "@")                   |
+| Login com e-mail em branco                            | Exibir erro "email é obrigatório"                               |
+| Login com senha em branco                             | Exibir erro "senha é obrigatória"                               |
+| Login com ambos os campos em branco                   | Exibir erro para ambos os campos                                |
 
 ---
 
@@ -40,7 +47,7 @@ O objetivo é validar os principais casos, incluindo sucesso, erros de validaç�
    
 3. Execute o Cypress no gitbash: npx cypress open 
 
-4. Na interface do Cypress, selecione o arquivo cadastro.cy.js para rodar os testes.
+4. Na interface do Cypress, selecione o arquivo desejado para rodar os testes.
 
 
 ## Bug Report
