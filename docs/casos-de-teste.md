@@ -103,3 +103,37 @@
 4. Clicar em "Cadastrar"
 
 **Resultado esperado:** Exibir mensagem "password deve ter no mínimo 6 caracteres"
+
+---
+
+# Caso de Teste: LOGIN-001
+
+## Título
+Login com credenciais válidas
+
+## Objetivo
+Validar se o sistema permite login com e-mail e senha corretos.
+
+## Pré-condição
+Usuário deve estar cadastrado previamente.
+
+## Severidade
+Alta
+
+## Prioridade
+Alta
+
+## Passos
+
+1. Acessar https://front.serverest.dev/login  
+2. Informar e-mail: `admin.qa@ex.com`  
+3. Informar senha: `teste`  
+4. Clicar no botão "Entrar"
+
+## Resultado Esperado
+- Exibir mensagem: "Login realizado com sucesso"
+- Redirecionar para a rota `/usuarios`
+
+## Pós-condição
+Usuário autenticado e com sessão ativa.
+

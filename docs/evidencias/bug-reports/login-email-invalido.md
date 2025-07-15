@@ -16,7 +16,9 @@ O sistema deveria exibir uma mensagem de erro clara, por exemplo: "Email inváli
 O sistema permite a tentativa de login sem exibir mensagem de erro e sem impedir o envio do formulário.
 
 ## Impacto
-Pode causar tentativas de login inválidas e confusão para o usuário, comprometendo a usabilidade e segurança da aplicação.
+- A experiência do usuário pode ser prejudicada por mensagens genéricas e mal posicionadas
+- Testes automatizados (Cypress) não conseguem capturar essa mensagem nativa diretamente, tornando a automação menos confiável
+- Pode causar inconsistência visual entre plataformas
 
 ## Evidências
 ![Email-invalido](imagens-bug/email-invalido.png)
@@ -31,5 +33,23 @@ Pode causar tentativas de login inválidas e confusão para o usuário, comprome
 
 ---
 
-## Sugestão de correção
-Implementar validação de formato de e-mail no front-end e exibir mensagem de erro antes de permitir o envio do formulário.
+## Recomendação de Melhoria
+
+### Substituir a validação nativa por uma validação customizada
+
+**Sugestões:**
+- Mensagem de erro estilizada abaixo do campo
+- Ícone visual e borda vermelha no input
+- Texto acessível e claro para o usuário
+- Validação feita por JavaScript com mensagens visíveis no DOM
+
+**Benefícios:**
+- Interface mais coerente e profissional
+- Melhor experiência de uso
+- Facilidade para testes automatizados com Cypress
+- Controle total sobre mensagens, cores e comportamento
+
+---
+
+## Sugestão de correção técnica
+Implementar a validação do campo de e-mail via JavaScript com feedback visual customizado. Evitar depender exclusivamente do atributo `type="email"`, permitindo assim maior controle da experiência do usuário e dos testes.
